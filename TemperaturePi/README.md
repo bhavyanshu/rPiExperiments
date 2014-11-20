@@ -5,6 +5,15 @@
 * temp.c - Gets the temperature and timestamp. Generates a log file which contains data to be converted by log2json.py into a valid JSON format.
 * log2json.py - Converts log file data to a valid JSON output and dumps it to log.json file.
 
+#Usage
+
+Connect your DS18B20 to your raspberry pi. Next download this repository and unzip it. Then,
+
+	cd ./TemperaturePi
+	chmod +x *.sh
+	
+Now run `./temp.sh` or `./temp_log.sh` as per your requirement.
+
 #Purpose?
 
 This program can be used to generate graph from final json data. 
