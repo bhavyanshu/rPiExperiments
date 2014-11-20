@@ -9,4 +9,10 @@ dev=$base_dir$temp_dev
 
 gcc -O3 -fPIC -g -Wall -Werror temp.c -o temp
 
-while true; do echo `./temp $dev`; sleep 1; done
+echo `./temp $dev` >> log;
+
+if [ $? -eq 0 ]; then
+    echo `python log2json.py`;
+else
+    echo FAIL
+fi

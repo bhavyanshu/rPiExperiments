@@ -1,3 +1,6 @@
+/**
+ * Copyright (c) 2014 Bhavyanshu Parasher - No restriction on the distribution/modification of this file.
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
